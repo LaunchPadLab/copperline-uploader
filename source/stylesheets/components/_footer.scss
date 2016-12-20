@@ -13,12 +13,15 @@ footer{
 Logos
 -----------------------*/
 .footer-logos{
+  display: inline-block;
+  width: 100%;
+
   li{
     display: inline-block;
-    @include rem(margin, 0px 10px);
+    @include rem(margin,30px 10px 0px 0px);
     @include transition(all 0.3s ease-in-out);
     max-width: 100px;
-    opacity: 0.2;
-    width: 30%;
+    opacity: 0.1;
+    width: 20%;
   }
 }
