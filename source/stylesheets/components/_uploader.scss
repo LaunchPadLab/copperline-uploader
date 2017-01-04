@@ -20,6 +20,17 @@ $file-uploader__error: rgb(214, 93, 56);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &:before{
+    content: "";
+    display: inline-block;
+    @include rem(margin-right, 8px);
+    background: url(/images/check-green.svg);
+    background-size: 100%;
+    height: 20px;
+    width: 20px;
+    vertical-align: sub;
+  }
 }
 
 .file-list li {
@@ -104,7 +115,6 @@ $file-uploader__error: rgb(214, 93, 56);
 .file-uploader__submit-button {
   width: 100%;
   border: none;
-  //font-size: 1.5em;
   padding: 1em;
   background-color: $file-uploader__primaryColor;
   color: white;
@@ -113,12 +123,9 @@ $file-uploader__error: rgb(214, 93, 56);
   }
 }
 
-//layout
 .file-uploader {
   @extend %clearfix;
 }
-
-//utility
 
 %clearfix {
   &:after {
@@ -146,8 +153,8 @@ p.error-message{
 
 //File Input
 .fileContainer {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 
   &:hover{
     background-color: darken($orange-base, 8%);
@@ -171,18 +178,16 @@ p.error-message{
   display: inline-block !important;
 }
 
-/* Example stylistic flourishes */
 
 .fileContainer {
-    background: $orange-base;
-    //float: left;
-    padding: 15px 5px;
-    color: $white-base;
-    width: 48.82117%;
-    text-align: center;
-    @include s-base;
+  background: $orange-base;
+  padding: 15px 5px;
+  color: $white-base;
+  width: 48.82117%;
+  text-align: center;
+  @include s-base;
 }
 
 .fileContainer [type=file] {
-    cursor: pointer;
+  cursor: pointer;
 }
