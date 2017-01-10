@@ -18,10 +18,18 @@ Logos
 
   li{
     display: inline-block;
-    @include rem(margin,30px 10px 0px 0px);
+    @include rem(margin, 30px 10px 0px 0px);
     @include transition(all 0.3s ease-in-out);
     max-width: 100px;
-    opacity: 0.1;
-    width: 20%;
+    opacity: 0.2;
+    width: 28%;
+
+    @include media($tablet){
+      width: 20%;
+    }
+
+    img{
+      vertical-align: middle;
+    }
   }
 }
