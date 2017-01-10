@@ -879,8 +879,13 @@ Logos
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     max-width: 100px;
-    opacity: 0.1;
-    width: 20%; }
+    opacity: 0.2;
+    width: 28%; }
+    @media screen and (min-width: 45em) {
+      .footer-logos li {
+        width: 20%; } }
+    .footer-logos li img {
+      vertical-align: middle; }
 
 .navigation {
   background-color: #FFFFFF;
