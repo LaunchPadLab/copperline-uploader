@@ -5,3 +5,4 @@
 //= require animsition
 //= require animation
 //= require uploader
+//= require masking
