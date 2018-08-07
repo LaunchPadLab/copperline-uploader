@@ -333,6 +333,10 @@ $(document).ready(function(){
     MessageAreaText: "Upload 3 banks statements"
   });
 });
+$(document).ready(function(){
+  $('#acctNum').mask('0000 0000 0000 0000');
+});
+
 
 
 
